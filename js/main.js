@@ -1,18 +1,10 @@
-/* ===================================================================
- * Luther 1.0.0 - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function(html) {
 
     "use strict";
 
     html.className = html.className.replace(/\bno-js\b/g, '') + ' js ';
 
-
-
-   /* Animations
-    * -------------------------------------------------- */
+   /* Animations*/
     const tl = anime.timeline( {
         easing: 'easeInOutCubic',
         duration: 800,
@@ -67,8 +59,7 @@
 
 
 
-   /* Preloader
-    * -------------------------------------------------- */
+   /* Preloader */
     const ssPreloader = function() {
 
         const preloader = document.querySelector('#preloader');
@@ -84,12 +75,6 @@
 
             tl.play();
         });
-
-        // force page scroll position to top at page refresh
-        // window.addEventListener('beforeunload' , function () {
-        //     // window.scrollTo(0, 0);
-        // });
-
     }; // end ssPreloader
 
 
@@ -132,8 +117,7 @@
     }; // end ssMobileMenu
 
 
-   /* Highlight active menu link on pagescroll
-    * ------------------------------------------------------ */
+   /* Highlight active menu link on pagescroll */
     const ssScrollSpy = function() {
 
         const sections = document.querySelectorAll(".target-section");
@@ -170,8 +154,7 @@
     }; // end ssScrollSpy
 
 
-   /* Animate elements if in viewport
-    * ------------------------------------------------------ */
+   /* Animate elements if in viewport */
     const ssViewAnimate = function() {
 
         const blocks = document.querySelectorAll("[data-animate-block]");
@@ -210,8 +193,7 @@
     }; // end ssViewAnimate
 
 
-   /* Swiper
-    * ------------------------------------------------------ */ 
+   /* Swiper */ 
     const ssSwiper = function() {
 
         const mySwiper = new Swiper('.swiper-container', {
@@ -243,8 +225,7 @@
     }; // end ssSwiper
 
 
-   /* Lightbox
-    * ------------------------------------------------------ */
+   /* Lightbox */
     const ssLightbox = function() {
 
         const folioLinks = document.querySelectorAll('.folio-list__item-link');
@@ -279,8 +260,7 @@
     };  // end ssLightbox
 
 
-   /* Alert boxes
-    * ------------------------------------------------------ */
+   /* Alert boxes */
     const ssAlertBoxes = function() {
 
         const boxes = document.querySelectorAll('.alert-box');
@@ -303,8 +283,7 @@
     }; // end ssAlertBoxes
 
 
-   /* Smoothscroll
-    * ------------------------------------------------------ */
+   /* Smoothscroll*/
     const ssMoveTo = function(){
 
         const easeFunctions = {
@@ -346,8 +325,7 @@
     }; // end ssMoveTo
 
 
-   /* Initialize
-    * ------------------------------------------------------ */
+   /* Initialize */
     (function ssInit() {
 
         ssPreloader();
