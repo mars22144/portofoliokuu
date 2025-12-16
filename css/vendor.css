@@ -735,20 +735,6 @@ button.swiper-pagination-bullet {
     will-change     : opacity;
 }
 
-.basicLightbox::after {
-    content             : "";
-    position            : absolute;
-    top                 : 1.8rem;
-    right               : 1.8rem;
-    width               : 2em;
-    height              : 2em;
-    background          : url(../images/icons/icon-close.svg);
-    background-position : center;
-    background-size     : 1.8rem 1.8rem;
-    background-repeat   : no-repeat;
-    cursor              : pointer;
-}
-
 .basicLightbox--visible {
     opacity : 1;
 }

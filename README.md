@@ -1,7 +1,7 @@
 # How to Install
 1. type this at cmd
-   ```git clone https://github.com/mars22144/portofoliokuu.git```
+   ```git clone https://github.com/mars22144/portofolio_campus.git```
 2. and type this
-   ```cd portofoliokuu```
+   ```cd portofolio_campus```
 3. you have entered the file directory, then type this to open Visual Studio Code
    ```code .```

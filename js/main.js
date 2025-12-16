@@ -78,8 +78,7 @@
     }; // end ssPreloader
 
 
-   /* Mobile Menu
-    * ---------------------------------------------------- */ 
+   /* Mobile Menu */ 
     const ssMobileMenu = function() {
 
         const toggleButton = document.querySelector('.mobile-menu-toggle');
@@ -116,8 +115,7 @@
 
     }; // end ssMobileMenu
 
-
-   /* Highlight active menu link on pagescroll */
+    // Highlight active menu link on pagescroll
     const ssScrollSpy = function() {
 
         const sections = document.querySelectorAll(".target-section");
