@@ -355,7 +355,7 @@
         <footer class="s-footer">
             <div class="row">
                 <div class="column ss-copyright">
-                    <span>© Copyright Fauziadnan</span> 
+                    © <span id="year"></span>  Copyright Fauziadnan
                 </div>
                 <div class="ss-go-top">
                     <a class="smoothscroll" title="Back to Top" href="#top">
@@ -371,5 +371,8 @@
     <!-- Java Script -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
