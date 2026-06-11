@@ -281,7 +281,7 @@
     }; // end ssAlertBoxes
 
 
-   /* Smoothscroll*/
+/* Smoothscroll*/
     const ssMoveTo = function(){
 
         const easeFunctions = {
